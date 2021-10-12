@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -10,143 +11,176 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
 
-    
+
 
     <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-      }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        a.me-3,
+        a.py-2 {
+            font-weight: 700;
+        }
+        
+        div.row-cols-md-3 {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        header {
+            background-color: #FFF2C5;
+        }
+        
+        .container header a {
+            padding: 10px;
+        }
+        
+        div.display-6 {
+            margin-left: 50px;
+        }
+        
+        .card {
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+        }
+        
+        .list-unstyled {
+            /* Voltium Foundation announces new Cryptocurrency Project */
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            font-weight: 200;
+            font-size: 24px;
+            color: #000000;
+        }
+        
+        .my-0 {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+        }
+        
+        .mission {
+            padding: 50px;
+        }
     </style>
 
-    
+
     <!-- Custom styles for this template -->
     <link href="pricing.css" rel="stylesheet">
-  </head>
-  <body>
-    
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="check" viewBox="0 0 16 16">
-    <title>Voltium Foundation</title>
-    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-  </symbol>
-</svg>
+</head>
 
-<div class="container py-3">
-  <header>
-    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-       <img src="./logo.png" >
-      </a>
+<body>
 
-      <nav class="d-inline-flex mt-2  ml-auto" style="float: right;">
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">About</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#" style="margin-left: 20px;">Our Mission</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#" style="margin-left: 20px;">Resources</a>
-        <a class="py-2 text-dark text-decoration-none" href="#" style="margin-left: 20px;">News</a>
-      </nav>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check" viewBox="0 0 16 16">
+      <title>Voltium Foundation</title>
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+  </svg>
+
+    <div class="container py-3">
+        <header>
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                    <img src="./logo.png">
+                </a>
+
+                <nav class="d-inline-flex mt-2  ml-auto" style="float: right;">
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="#">About</a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="#" style="margin-left: 20px;">Our Mission</a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="#" style="margin-left: 20px;">Resources</a>
+                    <a class="py-2 text-dark text-decoration-none" href="#" style="margin-left: 20px;">News</a>
+                </nav>
+            </div>
+
+            <div style="display: flex; background-color: #FFF2C5;">
+                <div class="display-6 text-center mb-4" style="position: relative; top:80px;">
+                    <h1 class="display-6 text-left mb-4">Votlium<br>Foundation</h1>
+                    <p class="fs-5 text-left">Cryptocurrency donation set to <br> fund innovation in Tech. and Children</p>
+                </div>
+                <div class="ml-auto">
+                    <img src="./img/favicons/show of strength-01 1.png">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">News and Opinion 26 August 2021</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="list-unstyled mt-3 mb-4">Voltium Foundation announces new Cryptocurrency project</h3>
+                            <button type="button" class="w-100 btn btn-lg btn-warning">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">News and Opinion 26 August 2021</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="list-unstyled mt-3 mb-4">Voltium Foundation announces new Cryptocurrency project</h3>
+                            <button type="button" class="w-100 btn btn-lg btn-warning">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">News and Opinion 26 August 2021</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="list-unstyled mt-3 mb-4">Voltium Foundation announces new Cryptocurrency project</h3>
+                            <button type="button" class="w-100 btn btn-lg btn-warning">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mission" style="display: flex; background-color: #FFF2C5;">
+                <div class="">
+                    <h2 class="display-6 text-left mb-4">Our Mission</h2>
+                    <p>We are a non profit aiming to speed up the switch to<br>renewable energy, eliminating burning fossil fuels.
+                    </p>
+                    <p>our missions<br> driving adoption of voltium<br> bringing utiliuty companies and solar fields to voltium</p>
+                    <p>and growing voltium network to support an <br> ecofriendly future</p>
+                </div>
+                <div class="ml-auto">
+                    <img src="./img/favicons/investor.png">
+                </div>
+            </div>
+            <div class="pt-4 my-md-5 pt-md-5 border-top">
+                <h2 class="display-6 text-center mb-4">Partners</h2>
+            </div>
+        </main>
     </div>
 
-   <div style="display: flex; background-color: #FFF2C5;">
-    <div class=" display-6 text-center mb-4"style="position: relative; top:80px;" >
-      <h1 class="display-6 text-left mb-4" >Votlium<br>Foundation</h1>
-      <p class="fs-5 text-left">Cryptocurrency donation set to <br>
-        fund innovation in Tech. and Children</p>
-
-    </div>
-    <div class="ml-auto">
-      <img src="./img/favicons/show of strength-01 1.png">
-    </div>
-   </div>
-  </header>
-
-  <main>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">News and Opinion 26 August 2021</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title"><small class="text-muted fw-light"></small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Voltium Foundation </li>
-              <li>announces new</li>
-              <li>Email support</li>
-              <li>Project</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Read More</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">News and Opinion 26 August 2021</h4>
-          </div>
-          <div class="card-body">
-            
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Voltium Foundation </li>
-              <li>announces new</li>
-              <li>Email support</li>
-              <li>Project</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Read More</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-white bg-primary border-primary">
-            <h4 class="my-0 fw-normal">News and Opinion 26 August 2021</h4>
-          </div>
-          <div class="card-body">
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Voltium Foundation </li>
-              <li>announces new</li>
-              <li>Email support</li>
-              <li>Project</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Read More</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
-   <div style="display: flex; background-color: #FFF2C5;">
-    <div class="">
-      <h2 class="display-6 text-left mb-4">Our Mission</h2>
-      <p>We are a non profit aiming to speed up the switch to<br>renewable energy, eliminating burning fossil fuels.</p>
-      <p>our missions<br>
-        driving adoption of voltium<br>
-        bringing utiliuty companies and solar fields to voltium</p>
-        <p>and growing voltium network to support an <br> ecofriendly future</p>
-  </div>
-  <div class="ml-auto">
-    <img src="./img/favicons/investor.png">
-  </div>
-   </div>
-    <div class="pt-4 my-md-5 pt-md-5 border-top">
-      <h2 class="display-6 text-center mb-4">Partners</h2>
-    </div>
-  </main>
-</div>
+</body>
 
-
-    
-  </body>
 </html>
